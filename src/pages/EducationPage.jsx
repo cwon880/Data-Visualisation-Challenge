@@ -3,10 +3,10 @@ import Card from "@material-ui/core/Card";
 
 
 import CardContent from "@material-ui/core/CardContent";
-import Typography from "@material-ui/core/Typography";
+//import Typography from "@material-ui/core/Typography";
 import {withRouter} from "react-router";
 import {formattedSales} from "../data";
-import {BarGraph} from "../ui-components/Graphs/BarGraph";
+import {LineGraph} from "../ui-components/Graphs/LineGraph";
 
 class EducationPageRouter extends React.Component{
 
@@ -14,7 +14,7 @@ class EducationPageRouter extends React.Component{
     return (
     <Card>
       <CardContent>Graph Example</CardContent>
-      <BarGraph title="Location of cars in the last Month"
+      <LineGraph title="Location of cars in the last Month"
                 xAxis='date'
                 yAxis='car'
                 yAxisLabel = "Number"
