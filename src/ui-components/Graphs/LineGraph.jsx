@@ -7,6 +7,8 @@ import { LineChart,
          Legend,
          Tooltip} from 'recharts';
 
+
+//LineGraph class acts as wrapper for a LineChart, similar to BarGraph.jsx provided
 class LineGraph extends React.Component {
     constructor(props) {
         super(props);
@@ -20,7 +22,6 @@ class LineGraph extends React.Component {
         "#9631F5"]
     }
 
-
     render() {
         let data = this.props.data;
         let height = this.props.height ? this.props.height : 500;
@@ -29,15 +30,12 @@ class LineGraph extends React.Component {
         let xAxis = this.props.xAxis;
         let yAxisLabel = this.props.yAxisLabel;
         let xAxisLabel = this.props.xAxisLabel;
-        // //let legend = this.props.legend
-        //   ? <Legend />
-        //   : null;
 
         return (
             <div style={{height: height + 50,
                 width: divWidth,
                 float: "left",
-                backgroundColor: "cornsilk"}}>
+                backgroundColor: "azure"}}>
 
                 {this.props.title ? <h3 align="center">{this.props.title}</h3> : null}
 
@@ -47,7 +45,7 @@ class LineGraph extends React.Component {
                     data = {data}
                     margin={{top: 20, right: 50, bottom: 100, left: 20}}
                 >
-                    <CartesianGrid strokeDasharray="3 3" />
+                    <CartesianGrid strokeDasharray="6 6" />
                     <Line type="monotone" dataKey="car" stroke="#8884d8" />
                     <Line type="monotone" dataKey="phone" stroke="#82ca9d" />
                     <XAxis dataKey={xAxis}

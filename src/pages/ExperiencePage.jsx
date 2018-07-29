@@ -12,11 +12,11 @@ class ExperiencePageRouter extends React.Component{
     return (
     <Card>
       <CardContent>Graph Example</CardContent>
-      <BarGraph title="Location of Visiters in the last Month" 
-                xAxis='country' 
-                yAxis='numberOfVisitors' 
-                yAxisLabel = "Number" 
-                xAxisLabel = "Country" 
+      <BarGraph title="Location of Visiters in the last Month"
+                xAxis='country'
+                yAxis='numberOfVisitors'
+                yAxisLabel = "Number"
+                xAxisLabel = "Country"
                 data={locations} />
     </Card>
     )
