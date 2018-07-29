@@ -21,3 +21,5 @@ Stretch goal: if successful with using the already formatted data, then try to r
 -Haven't used git and github in a while since taking a git101 bootcamp course last semester, will have to remember how to commit, push etc again.
 -Time constraint, can't spend too much time researching without producing deliverables
 
+
+-Casey Wong
