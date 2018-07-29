@@ -1,5 +1,4 @@
 import React from "react";
-//import PropTypes from 'prop-types';
 import {YAxis,
         XAxis,
         Legend,
@@ -20,16 +19,6 @@ class BarGraph extends React.Component {
       "#79C7E3",
       "#9631F5"]
   }
-
-    // static propTypes = {
-    //   data: PropTypes.object.isRequired,
-    //   width: PropTypes.integer,
-    // }
-
-    // static defaultPropTypes = {
-    //   height: 250,
-    //   width: 900,
-    // }
 
   makeBars() {
     let yAxis = this.props.yAxis;

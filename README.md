@@ -1,21 +1,22 @@
+
 ## Data Visualisation Internship Challenge
-The following challenge simulates work you will be doing as the data visualisation intern. No prior knowledge of javascript, React, or Recharts is expected or necessary to complete this challenge.
+The following is my submission of the Quantiful data visualisation challenge, it was a fun, and at times frustrating experience, tackling a new language that I have not used before. I managed to successully reformat the car and phone sales data to match the format given by the formattedSales dataset and I also successfully visualised this data into a line chart.
 
-Often on the job, you will be faced with new and completely unfamiliar technology. This challenge tests your ability to work in such conditions, and your ability to navigate documentation and API.
+### How to run
 
-### Prerequisites
-- Coding experience
-- Basic competency with terminal and git
+To run my submission, 'npm install' will be needed to download all the node modules as I decided to not push the large node modules folder onto github (stack overflow suggested to do this), Apologies for any inconvenience caused.
 
+### Goals of this challenge
 
-### Installation instructions
-- Visit https://nodejs.org/en/ and install Node 
-- You can confirm you have node installed by typing 'node -v' in the terminal and receiving a response of what verison is installed
-- Navigate to the intern-task directory in terminal 
-- 'npm install'
-- 'npm start'
-- Now you can open your browser and navigate to http://localhost:8080/ to see the instructions for the task.
+Main goal: Use recharts library to visualise car and phone sales data in the education tab.
 
-### Submission Instructions
+Easy(ish) goal: Use the formatted data provided and then choose and create an appropriate graph to represent the data
 
-Please create a public github repository with your code and email careers@quantiful.co.nz with the link and with 'Data Visualisation Challenge Response' as the email subject.
+Stretch goal: if successful with using the already formatted data, then try to reformat the data given myself and then apply the new data to the graph.
+
+###Challenges to be faced
+
+-I have never used javascript, react or recharts before, will need to do a lot of googling into how it all works, will especially need to look into how to reformat data with javascript syntax
+-Will need to research into the recharts API to understand what kind of data is required to generate their graphs
+-Haven't used git and github in a while since taking a git101 bootcamp course last semester, will have to remember how to commit, push etc again.
+
