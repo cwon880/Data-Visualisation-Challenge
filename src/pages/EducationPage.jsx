@@ -14,11 +14,11 @@ class EducationPageRouter extends React.Component{
     return (
     <Card>
       <CardContent>Graph Example</CardContent>
-      <LineGraph title="Location of cars in the last Month"
+      <LineGraph title="Car and Phone sales over the previous month"
                 xAxis='date'
                 yAxis='car'
-                yAxisLabel = "Number"
-                xAxisLabel = "Country"
+                yAxisLabel = "Number of sales"
+                xAxisLabel = "Date"
                 data={formattedSales} />
     </Card>
     )

@@ -23,8 +23,8 @@ class LineGraph extends React.Component {
 
     render() {
         let data = this.props.data;
-        let height = this.props.height ? this.props.height : 250;
-        let width = this.props.width ? this.props.width : 900;
+        let height = this.props.height ? this.props.height : 500;
+        let width = this.props.width ? this.props.width : 1200;
         let divWidth = this.props.width ? this.props.width : '100%';
         let xAxis = this.props.xAxis;
         let yAxisLabel = this.props.yAxisLabel;
@@ -45,7 +45,7 @@ class LineGraph extends React.Component {
                     width = {width}
                     height = {height}
                     data = {data}
-                    margin={{top: 10, right: 10, bottom: 100, left: 10}}
+                    margin={{top: 20, right: 50, bottom: 100, left: 20}}
                 >
                     <CartesianGrid strokeDasharray="3 3" />
                     <Line type="monotone" dataKey="car" stroke="#8884d8" />
@@ -54,7 +54,7 @@ class LineGraph extends React.Component {
                         label={{value: xAxisLabel, angle: 0, position: "bottom"}}/>
                     <YAxis label={{value: yAxisLabel, angle: -90, position: "insideLeft"}}/>
                     <Tooltip/>
-                    <Legend/>
+                    <Legend align = "right"/>
                 </LineChart>
             </div>
         );
