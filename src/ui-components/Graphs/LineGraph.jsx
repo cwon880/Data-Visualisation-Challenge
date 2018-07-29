@@ -8,8 +8,8 @@ import { LineChart,
          Tooltip} from 'recharts';
 
 
-//LineGraph class acts as wrapper for a LineChart, similar to BarGraph.jsx provided
-class LineGraph extends React.Component {
+                                            //LineGraph class acts as wrapper for a LineChart,
+class LineGraph extends React.Component {   //similar to BarGraph.jsx provided, a lot of code is copy pasted from that file
     constructor(props) {
         super(props);
         this.palette = this.props.palette ?

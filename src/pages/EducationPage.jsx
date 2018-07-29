@@ -10,7 +10,7 @@ import { dataFormatter } from "../dataFormatter";
 
 class EducationPageRouter extends React.Component{
 
-
+  //this class is similar to the ExperiencePageRouter class
   render() {
     return (
     <Card>
