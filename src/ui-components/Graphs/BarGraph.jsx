@@ -1,9 +1,10 @@
 import React from "react";
-import {YAxis, 
-        XAxis, 
+//import PropTypes from 'prop-types';
+import {YAxis,
+        XAxis,
         Legend,
-        Tooltip, 
-        BarChart, 
+        Tooltip,
+        BarChart,
         Bar} from 'recharts';
 
 class BarGraph extends React.Component {
@@ -11,19 +12,29 @@ class BarGraph extends React.Component {
     super(props);
     this.makeBars = this.makeBars.bind(this);
     this.palette = this.props.palette ?
-      this.props.palette : 
+      this.props.palette :
       ["#1A3177",
       "#12939A",
       "#FF9833",
-      "#EF5D28", 
-      "#79C7E3", 
+      "#EF5D28",
+      "#79C7E3",
       "#9631F5"]
   }
 
+    // static propTypes = {
+    //   data: PropTypes.object.isRequired,
+    //   width: PropTypes.integer,
+    // }
+
+    // static defaultPropTypes = {
+    //   height: 250,
+    //   width: 900,
+    // }
+
   makeBars() {
     let yAxis = this.props.yAxis;
-    return <Bar type="monotone" 
-                dataKey={yAxis} 
+    return <Bar type="monotone"
+                dataKey={yAxis}
                 fill={this.palette[0]}/>;
   }
 
@@ -35,24 +46,25 @@ class BarGraph extends React.Component {
     let xAxis = this.props.xAxis;
     let yAxisLabel = this.props.yAxisLabel;
     let xAxisLabel = this.props.xAxisLabel;
-    let legend = this.props.legend 
-      ? <Legend /> 
+    let legend = this.props.legend
+      ? <Legend />
       : null;
-    
+
     return (
-      <div style={{height: height + 50, 
-        width: divWidth, 
-        float: "left"}}>  
+      <div style={{height: height + 50,
+        width: divWidth,
+        float: "left"}}>
 
         {this.props.title ? <h3 align="center">{this.props.title}</h3> : null}
 
 
-          <BarChart width={width} 
-                    height={height} 
-                    data={data}
-                    margin={{top: 0, right: 0, bottom: 0, left: 0}}
-                    style={{margin: '0 auto'}}
-                    >
+          <BarChart
+            width={width}
+            height={height}
+            data={data}
+            margin={{top: 10, right: 10, bottom: 100, left: 10}}
+            style={{margin: '0 auto'}}
+          >
 
             <XAxis dataKey={xAxis}
                    label={{value: xAxisLabel, angle: 0, position: "bottom"}}/>
